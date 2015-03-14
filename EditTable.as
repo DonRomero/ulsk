@@ -308,6 +308,7 @@ package  src{
 		
 		private function btnDeleteClickListener(e:MouseEvent){
 			var s:String=ComboBox(this.getChildAt(1)).selectedLabel;
+			if(s==null)return;
 			var sel:Array= new Array;
 			deleteXml(s);
 			var num = numChildren;
